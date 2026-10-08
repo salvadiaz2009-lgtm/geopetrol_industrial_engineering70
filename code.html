@@ -1,0 +1,485 @@
+<!DOCTYPE html><html class="light" lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#6f84ac",
+                        "secondary-fixed-dim": "#bcc7dd",
+                        "surface-tint": "#495f84",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#b1c7f2",
+                        "on-background": "#181c1e",
+                        "outline": "#74777f",
+                        "primary": "#000000",
+                        "surface-bright": "#f7fafc",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#2d3133",
+                        "inverse-on-surface": "#eef1f3",
+                        "surface-container": "#ebeef0",
+                        "surface-variant": "#e0e3e5",
+                        "outline-variant": "#c4c6cf",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "primary-fixed": "#d6e3ff",
+                        "on-primary-fixed": "#001b3d",
+                        "secondary-fixed": "#d8e3fa",
+                        "primary-fixed-dim": "#b1c7f2",
+                        "on-error": "#ffffff",
+                        "tertiary": "#000000",
+                        "on-secondary-container": "#586377",
+                        "tertiary-container": "#351001",
+                        "secondary": "#545f72",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-surface": "#181c1e",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#d5e0f7",
+                        "surface-container-high": "#e5e9eb",
+                        "surface-container-low": "#f1f4f6",
+                        "primary-container": "#D42728", /* Rojo Industrial GEOPETROL */
+                        "surface-dim": "#d7dadc",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f7fafc",
+                        "on-surface-variant": "#44474e",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#fdb698",
+                        "on-tertiary-fixed": "#351001",
+                        "on-primary-fixed-variant": "#ffffff",
+                        "surface": "#f7fafc",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#ffdbcd",
+                        "on-secondary-fixed": "#111c2c",
+                        "on-tertiary-fixed-variant": "#6b3a24",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#b2755b",
+                        "industrial-red": "#D42728",
+                        "deep-navy": "#D42728", /* Redefinido a Rojo Industrial como primario */
+                        "steel-gray": "#4A5568"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px",
+                        "unit": "4px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "body-sm": ["Hanken Grotesk"],
+                        "headline-lg": ["Montserrat"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "data-mono": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["18px", {"lineHeight": "24px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "data-mono": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="bg-background text-on-background font-body-md selection:bg-industrial-red selection:text-white">
+<!-- Header Section -->
+<header class="fixed top-0 w-full z-50 bg-white text-on-surface border-b-2 border-outline-variant shadow-[4px_4px_0px_0px_rgba(0,0,0,0.1)]">
+<div class="flex justify-between items-center w-full px-margin-desktop py-stack-md max-w-[1440px] mx-auto">
+<div class="flex items-center gap-stack-sm">
+<img alt="GEOPETROL Official Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQvs8qfYPB8a0P4VahO1iRicbT0wLA9z-HS7scgFqV_lpLyMdXt04o1GZMkjq3t_hOe5HuYLPW9yvC3BlkldpQp1Vz2pogJ7ry7exYan9ILKd0Bv_kkyyvqjwYofUGOgsESsZjA1sOK-sYJEpcll-rhdLLBDHEfO3AewaIa9tDSzNHFKlxl5PEUbJaKAA_BfHJ-fUF6sjN83t7MO9C7k0aptbNXMDlpK9YOl8mYQR_3Yrua9ZYRXGeVvfhpjiy05DAqs9QOlflJ-M">
+</div>
+<nav class="hidden md:flex gap-gutter">
+<a class="font-label-caps text-label-caps text-steel-gray hover:text-industrial-red transition-colors" href="#portafolio">SERVICIOS</a>
+<a class="font-label-caps text-label-caps text-steel-gray hover:text-industrial-red transition-colors" href="#portafolio">PORTAFOLIO</a>
+<a class="font-label-caps text-label-caps text-steel-gray hover:text-industrial-red transition-colors" href="#seguridad">SEGURIDAD HSE</a>
+<a class="font-label-caps text-label-caps text-steel-gray hover:text-industrial-red transition-colors" href="#contacto">CONTACTO</a>
+</nav>
+<a href="#cotizacion" class="inline-block text-center bg-industrial-red text-white px-stack-md py-stack-sm font-label-caps text-label-caps uppercase tracking-widest border-2 border-black active:translate-y-0.5 transition-all btn-shadow">
+            SOLICITAR COTIZACIÓN
+        </a>
+</div>
+</header>
+<main class="pt-[80px]">
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex items-center bg-[#181c1e]">
+<div class="absolute inset-0 z-0 opacity-40 grayscale" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDE3EPTtJYkb3lcl6vwQO2Oc5oO0HNywKt5NzXi09dVMDrxoW3IiR0_7eQ-g0QzQDd24z0sICTXm6wYRVDLoL_QH0oUx7eNNEXg-F8BN-hJyt1KyVIKWQ9UDtXejK9-SI3zUfj8hrwdXHk-RLKpbyrBz7AWDyVSran0g-CSnS5qqeh5sZGl1Z5WwPC7aC-ay_uQXzTOzMP-N72WeyPNmzCS1pHjW-5De97Fen5IeaaaDWPEff4pOm-0osEHLwa_CSLGWiTAB0pofMQ')"></div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-margin-desktop w-full py-stack-lg">
+<div class="max-w-3xl border-l-4 border-industrial-red pl-stack-lg">
+<h1 class="font-headline-lg text-headline-lg text-white mb-stack-md uppercase leading-tight">
+                    GEOPETROL: INGENIERÍA DE ALTA PRECISIÓN PARA EL SECTOR ÓLEO-GAS
+                </h1>
+<p class="font-body-lg text-body-lg text-surface-variant mb-stack-lg max-w-2xl">
+                    Más de 20 años de experiencia técnica. 500+ proyectos de infraestructura crítica ejecutados con 0% incidentes reportados y máxima eficiencia operativa.
+                </p>
+<div class="flex flex-wrap gap-stack-md">
+<a href="#cotizacion" class="inline-block text-center bg-industrial-red text-white px-stack-lg py-stack-md font-label-caps text-label-caps border-2 border-black btn-shadow transition-all">
+                        SOLICITAR COTIZACIÓN
+                    </a>
+<a href="#portafolio" class="inline-block text-center bg-transparent border-2 border-white text-white px-stack-lg py-stack-md font-label-caps text-label-caps hover:bg-white hover:text-[#181c1e] transition-all">
+                        VER PORTAFOLIO
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Barra de Confianza -->
+<section class="bg-surface-container border-b-2 border-outline py-stack-md">
+<div class="max-w-[1440px] mx-auto px-margin-desktop flex flex-wrap justify-between items-center gap-gutter opacity-70 grayscale hover:grayscale-0 transition-all">
+<div class="flex items-center gap-stack-sm">
+<span class="material-symbols-outlined text-industrial-red text-4xl">verified</span>
+<span class="font-label-caps text-label-caps">CERTIFICACIÓN ISO 9001:2015</span>
+</div>
+<div class="flex items-center gap-stack-sm">
+<span class="material-symbols-outlined text-industrial-red text-4xl">eco</span>
+<span class="font-label-caps text-label-caps">CERTIFICACIÓN ISO 14001:2015</span>
+</div>
+<div class="h-8 w-px bg-outline hidden lg:block"></div>
+<div class="font-label-caps text-label-caps text-outline">TRUSTED BY INDUSTRY LEADERS:</div>
+<div class="flex gap-stack-lg items-center">
+<span class="font-headline-sm text-steel-gray tracking-tighter">ECOPETROL</span>
+<span class="font-headline-sm text-steel-gray tracking-tighter">CHEVRON</span>
+<span class="font-headline-sm text-steel-gray tracking-tighter">HALLIBURTON</span>
+</div>
+</div>
+</section>
+<!-- Portafolio Técnico -->
+<section class="py-stack-lg max-w-[1440px] mx-auto px-margin-desktop" id="portafolio">
+<div class="mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-steel-gray uppercase">PORTAFOLIO TÉCNICO</h2>
+<div class="w-24 h-1 bg-industrial-red mt-2"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="brutal-border p-stack-lg bg-white flex flex-col h-full card-shadow transition-all">
+<span class="material-symbols-outlined text-industrial-red text-5xl mb-stack-md">construction</span>
+<h3 class="font-headline-sm text-headline-sm text-steel-gray mb-stack-sm uppercase">Construcción Especializada</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-stack-md">
+                    Ingeniería civil y mecánica de alta complejidad para oleoductos y estaciones de bombeo con estándares internacionales API.
+                </p>
+<button class="btn-ver-detalle font-label-caps text-label-caps text-industrial-red border-b-2 border-industrial-red self-start hover:text-black hover:border-black transition-colors" data-service="construccion">VER DETALLE</button>
+</div>
+<!-- Card 2 -->
+<div class="brutal-border p-stack-lg bg-white flex flex-col h-full card-shadow transition-all">
+<span class="material-symbols-outlined text-industrial-red text-5xl mb-stack-md">precision_manufacturing</span>
+<h3 class="font-headline-sm text-headline-sm text-steel-gray mb-stack-sm uppercase">Facilidades y Montaje</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-stack-md">
+                    Montaje industrial de plantas de tratamiento, tanques de almacenamiento y sistemas de compresión de gas.
+                </p>
+<button class="btn-ver-detalle font-label-caps text-label-caps text-industrial-red border-b-2 border-industrial-red self-start hover:text-black hover:border-black transition-colors" data-service="montaje">VER DETALLE</button>
+</div>
+<!-- Card 3 -->
+<div class="brutal-border p-stack-lg bg-white flex flex-col h-full card-shadow transition-all">
+<span class="material-symbols-outlined text-industrial-red text-5xl mb-stack-md">settings_input_component</span>
+<h3 class="font-headline-sm text-headline-sm text-steel-gray mb-stack-sm uppercase">Mantenimiento de Cabezales</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-stack-md">
+                    Servicios preventivos y correctivos para cabezales de pozo (Wellheads) y árboles de navidad bajo normativa técnica estricta.
+                </p>
+<button class="btn-ver-detalle font-label-caps text-label-caps text-industrial-red border-b-2 border-industrial-red self-start hover:text-black hover:border-black transition-colors" data-service="mantenimiento">VER DETALLE</button>
+</div>
+<!-- Card 4 -->
+<div class="brutal-border p-stack-lg bg-white flex flex-col h-full card-shadow transition-all">
+<span class="material-symbols-outlined text-industrial-red text-5xl mb-stack-md">groups</span>
+<h3 class="font-headline-sm text-headline-sm text-steel-gray mb-stack-sm uppercase">Capital Humano Técnico</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-stack-md">
+                    Suministro de personal altamente calificado, ingenieros de campo y técnicos certificados en normativas de seguridad.
+                </p>
+<button class="btn-ver-detalle font-label-caps text-label-caps text-industrial-red border-b-2 border-industrial-red self-start hover:text-black hover:border-black transition-colors" data-service="humano">VER DETALLE</button>
+</div>
+<!-- Card 5 -->
+<div class="brutal-border p-stack-lg bg-white flex flex-col h-full card-shadow transition-all">
+<span class="material-symbols-outlined text-industrial-red text-5xl mb-stack-md">bolt</span>
+<h3 class="font-headline-sm text-headline-sm text-steel-gray mb-stack-sm uppercase">Sistemas Eléctricos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow mb-stack-md">
+                    Diseño e instalación de redes eléctricas de media y alta tensión para campos petroleros y automatización industrial.
+                </p>
+<button class="btn-ver-detalle font-label-caps text-label-caps text-industrial-red border-b-2 border-industrial-red self-start hover:text-black hover:border-black transition-colors" data-service="sistemas">VER DETALLE</button>
+</div>
+</div>
+</section>
+<!-- Proceso de Trabajo -->
+<section class="bg-industrial-red text-white py-stack-lg">
+<div class="max-w-[1440px] mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg mb-stack-lg uppercase text-center">NUESTRO PROCESO TÉCNICO</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 border-2 border-white flex items-center justify-center font-headline-md text-3xl mb-stack-sm group-hover:bg-white group-hover:text-industrial-red transition-colors">01</div>
+<h4 class="font-headline-sm mb-stack-sm uppercase">DIAGNÓSTICO</h4>
+<p class="font-body-sm opacity-80">Evaluación exhaustiva de requerimientos y riesgos en sitio.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 border-2 border-white flex items-center justify-center font-headline-md text-3xl mb-stack-sm group-hover:bg-white group-hover:text-industrial-red transition-colors">02</div>
+<h4 class="font-headline-sm mb-stack-sm uppercase">PLANIFICACIÓN</h4>
+<p class="font-body-sm opacity-80">Diseño detallado de cronogramas y logística de materiales.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 border-2 border-white flex items-center justify-center font-headline-md text-3xl mb-stack-sm group-hover:bg-white group-hover:text-industrial-red transition-colors">03</div>
+<h4 class="font-headline-sm mb-stack-sm uppercase">EJECUCIÓN</h4>
+<p class="font-body-sm opacity-80">Despliegue operativo bajo estándares HSE y API.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 border-2 border-white flex items-center justify-center font-headline-md text-3xl mb-stack-sm group-hover:bg-white group-hover:text-industrial-red transition-colors">04</div>
+<h4 class="font-headline-sm mb-stack-sm uppercase">SOPORTE</h4>
+<p class="font-body-sm opacity-80">Monitoreo post-entrega y mantenimiento preventivo.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Resultados Stats -->
+<section class="py-stack-lg bg-surface-container-high">
+<div class="max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter text-center">
+<div class="p-stack-lg brutal-border bg-white">
+<div class="font-headline-lg text-5xl text-steel-gray mb-stack-sm">20+</div>
+<div class="font-label-caps text-label-caps text-steel-gray uppercase">AÑOS DE OPERACIÓN CONTINUA</div>
+</div>
+<div class="p-stack-lg brutal-border bg-white shadow-[4px_4px_0px_0px_#D42728]">
+<div class="font-headline-lg text-5xl text-industrial-red mb-stack-sm">500+</div>
+<div class="font-label-caps text-label-caps text-steel-gray uppercase">PROYECTOS EXITOSOS ENTREGADOS</div>
+</div>
+<div class="p-stack-lg brutal-border bg-white">
+<div class="font-headline-lg text-5xl text-steel-gray mb-stack-sm">24/7</div>
+<div class="font-label-caps text-label-caps text-steel-gray uppercase">TIEMPO DE RESPUESTA A EMERGENCIAS</div>
+</div>
+</div>
+</section>
+<!-- Seguridad HSE Section -->
+<section class="py-stack-lg max-w-[1440px] mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center" id="seguridad">
+<div class="order-2 lg:order-1">
+<div class="w-full aspect-video brutal-border" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8cljvO7luNk8F0ZlAJowMaVKhIZXFivIuKx9PEF0Q74zgP5E8dzpWHmP3F6l1zVg3Smc6pH1sLFVhyZKNtj8RZo2vM5IMU1ESM5ME4I-1xdWA6giJpehASNGqxu3tIk-ToOKsHFn5Qs4-B1QtPAkRIJkr7yXw-Yf-BgPVPp1zD_OQcLuUgfTY0OkXgeFZiTv9Bvozoy_iNzveDc0sxg33P9DbNN5uOF0RKuehRL7T-pDjbSpLuVE28UupT2vIs966HCY2XXnJ7r4')"></div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="font-headline-lg text-headline-lg text-steel-gray uppercase mb-stack-md">COMPROMISO CON LA SEGURIDAD HSE</h2>
+<p class="font-body-lg mb-stack-lg text-on-surface-variant">
+                En GEOPETROL, la integridad de nuestra gente y del medio ambiente es innegociable. Operamos bajo protocolos certificados que garantizan cero accidentes en campo.
+            </p>
+<div class="space-y-stack-sm">
+<div class="flex items-start gap-stack-sm">
+<span class="material-symbols-outlined text-industrial-red">check_circle</span>
+<div>
+<span class="font-headline-sm block uppercase">Protocolos Cero Accidentes</span>
+<span class="font-body-sm">Cultura preventiva arraigada en cada nivel operativo.</span>
+</div>
+</div>
+<div class="flex items-start gap-stack-sm">
+<span class="material-symbols-outlined text-industrial-red">check_circle</span>
+<div>
+<span class="font-headline-sm block uppercase">Manejo de Residuos Especiales</span>
+<span class="font-body-sm">Gestión ambiental responsable bajo normativa internacional.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lead Capture -->
+<section class="bg-surface-container-lowest border-y-4 border-industrial-red py-stack-lg" id="cotizacion">
+<div class="max-w-4xl mx-auto px-margin-desktop text-center">
+<h2 class="font-headline-md text-headline-md text-steel-gray mb-stack-md uppercase">COTIZACIÓN RÁPIDA</h2>
+<form class="grid grid-cols-1 md:grid-cols-3 gap-stack-md" id="form-cotizacion">
+<div class="text-left">
+<label class="font-label-caps text-label-caps block mb-1" for="cotizacion-empresa">EMPRESA</label>
+<input class="w-full brutal-border p-stack-sm focus:outline-none focus:ring-2 focus:ring-industrial-red" placeholder="Ej: Ecopetrol S.A." type="text" id="cotizacion-empresa" name="empresa" required>
+</div>
+<div class="text-left">
+<label class="font-label-caps text-label-caps block mb-1" for="cotizacion-proyecto">TIPO DE PROYECTO</label>
+<select class="w-full brutal-border p-stack-sm focus:outline-none focus:ring-2 focus:ring-industrial-red" id="cotizacion-proyecto" name="tipo_de_proyecto" required>
+<option value="Construcción">Construcción</option>
+<option value="Mantenimiento">Mantenimiento</option>
+<option value="Personal Técnico">Personal Técnico</option>
+<option value="Alquiler de equipo">Alquiler de equipo</option></select>
+</div>
+<div class="text-left">
+<label class="font-label-caps text-label-caps block mb-1" for="cotizacion-urgencia">URGENCIA</label>
+<select class="w-full brutal-border p-stack-sm focus:outline-none focus:ring-2 focus:ring-industrial-red" id="cotizacion-urgencia" name="urgencia" required>
+<option value="Inmediata (< 24h)">Inmediata (&lt; 24h)</option>
+<option value="Normal (3-5 días)">Normal (3-5 días)</option>
+<option value="Planificación (1 mes+)">Planificación (1 mes+)</option>
+</select>
+</div>
+<div class="md:col-span-3 mt-stack-md">
+<button type="submit" class="w-full md:w-auto bg-industrial-red text-white px-stack-lg py-stack-md font-label-caps text-label-caps border-2 border-black btn-shadow transition-all">
+                        ENVIAR REQUERIMIENTO TÉCNICO
+                    </button>
+</div>
+</form>
+</div>
+</section>
+<!-- Equipo Técnico -->
+<section class="py-stack-lg max-w-[1440px] mx-auto px-margin-desktop">
+<div class="flex flex-col lg:flex-row gap-stack-lg items-center">
+<div class="lg:w-1/2">
+<h2 class="font-headline-lg text-headline-lg text-steel-gray uppercase mb-stack-md">CAPITAL HUMANO ESPECIALIZADO</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Contamos con un equipo de expertos con más de 15 años de experiencia técnica combinada. Invertimos en capacitación constante para dominar las tecnologías emergentes del sector.
+                </p>
+</div>
+<div class="lg:w-1/2 grid grid-cols-2 gap-stack-sm">
+<div class="aspect-square brutal-border bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDR3mcANkO-nrDUt84DMyHRWnzRb-FdeiBNiPopFZSpCaHYlWUdd46ufvCjMFLmzJXwbqrFSx_tvVsUTU3Kucg_AzTMzeyFFe5q1ozDlJsQvUiNUzx0Uj_tYsr1UcbpwIdu7OAd1VwGMMpk4QMw6HPsdDbrC5J1jP8G4vfigfp78VNaeyTT4g7ayA4xo8HSoVYDSQZA6900oTfg-MK1iW1RWx-jfVoHjyR2zxph423o0ANo0VHjbuqPjikr8c8KZ88ct4ODNGG2hJ8')"></div>
+<div class="aspect-square brutal-border bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5NfbHxj-1Qt9n8y575SSDRGjscevHt4aRDArQ3SIxtxkfOyp5vJVzo4KF6K1MBPQY-c3ozy72XQBLbJr1rKR42TWloeYUWnyLe4lBeZZqBpuw74AkaDSEumq4V9JHcjhzeSHi5o1gqmuTA8T1TMKgzwFQN0qTiWlpqua47kzFSNnSK_7-QwVptWgHFdwmMcXSoFuyjaeQ_KZZA_QOd4aKWTeY5rinicdzeA5McqhOLNZ4SWtvTEByegMUTLy3WYoQT0iztv1a108')"></div>
+</div>
+</div>
+</section>
+<!-- FAQ Técnico -->
+<section class="bg-surface-container py-stack-lg">
+<div class="max-w-4xl mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-steel-gray uppercase mb-stack-lg text-center">CONSULTAS TÉCNICAS FRECUENTES</h2>
+<div class="space-y-stack-sm">
+<details class="brutal-border bg-white p-stack-md group cursor-pointer">
+<summary class="font-headline-sm text-headline-sm uppercase flex justify-between items-center list-none">
+                        ¿Cuál es su tiempo de respuesta para movilización?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-sm mt-stack-sm text-on-surface-variant">Contamos con equipos de respuesta rápida capaces de movilizarse a cualquier campo petrolero nacional en menos de 24 horas para contingencias críticas.</p>
+</details>
+<details class="brutal-border bg-white p-stack-md group cursor-pointer">
+<summary class="font-headline-sm text-headline-sm uppercase flex justify-between items-center list-none">
+                        ¿Sus soldadores están certificados bajo qué norma?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-sm mt-stack-sm text-on-surface-variant">Todo nuestro personal de soldadura posee certificaciones AWS y API actualizadas, con pruebas de calificación específicas para cada tipo de proyecto.</p>
+</details>
+<details class="brutal-border bg-white p-stack-md group cursor-pointer">
+<summary class="font-headline-sm text-headline-sm uppercase flex justify-between items-center list-none">
+                        ¿Ofrecen garantías sobre el montaje de facilidades?
+                        <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<p class="font-body-sm mt-stack-sm text-on-surface-variant">Sí, todos nuestros montajes incluyen una póliza de garantía técnica extendida y un periodo de acompañamiento operativo post-entrega.</p>
+</details>
+</div>
+</div>
+</section>
+<!-- Contacto Industrial -->
+<section class="py-stack-lg max-w-[1440px] mx-auto px-margin-desktop" id="contacto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-steel-gray uppercase mb-stack-md">CONTACTO INDUSTRIAL</h2>
+<p class="font-body-lg mb-stack-lg">Hable con un ingeniero consultor hoy mismo sobre los requerimientos de su operación.</p>
+<div class="space-y-stack-md mb-stack-lg">
+<div class="flex items-center gap-stack-sm">
+<span class="material-symbols-outlined text-industrial-red text-3xl">phone_in_talk</span>
+<div>
+<span class="font-label-caps text-label-caps block">TELÉFONO / WHATSAPP</span>
+<span class="font-headline-sm text-steel-gray">+58 414 817 4159</span>
+</div>
+</div>
+<div class="flex items-center gap-stack-sm">
+<span class="material-symbols-outlined text-industrial-red text-3xl">mail</span>
+<div>
+<span class="font-label-caps text-label-caps block">CORREO CORPORATIVO</span>
+<span class="font-headline-sm text-steel-gray">info@geopetrol.co.ve</span>
+</div>
+</div>
+<div class="flex items-center gap-stack-sm">
+<span class="material-symbols-outlined text-industrial-red text-3xl">location_on</span>
+<div>
+<span class="font-label-caps text-label-caps block">OFICINA PRINCIPAL</span>
+<span class="font-headline-sm text-steel-gray">Av. Jesús Subero, Urb. Terracota, Oficina #1, El Tigre, Estado Anzoátegui.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="brutal-border p-stack-lg bg-white shadow-[8px_8px_0px_0px_rgba(212,39,40,0.1)]">
+<form class="space-y-stack-md" id="form-contacto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div>
+<label class="font-label-caps text-label-caps block mb-1" for="contacto-nombre">NOMBRE COMPLETO</label>
+<input class="w-full brutal-border p-stack-sm focus:ring-2 focus:ring-industrial-red outline-none" type="text" id="contacto-nombre" name="nombre_completo" required>
+</div>
+<div>
+<label class="font-label-caps text-label-caps block mb-1" for="contacto-empresa">EMPRESA</label>
+<input class="w-full brutal-border p-stack-sm focus:ring-2 focus:ring-industrial-red outline-none" type="text" id="contacto-empresa" name="empresa" required>
+</div>
+</div>
+<div>
+<label class="font-label-caps text-label-caps block mb-1" for="contacto-correo">CORREO CORPORATIVO</label>
+<input class="w-full brutal-border p-stack-sm focus:ring-2 focus:ring-industrial-red outline-none" type="email" id="contacto-correo" name="correo_corporativo" required>
+</div>
+<div>
+<label class="font-label-caps text-label-caps block mb-1" for="contacto-servicio">SERVICIO DE INTERÉS</label>
+<select class="w-full brutal-border p-stack-sm focus:ring-2 focus:ring-industrial-red outline-none" id="contacto-servicio" name="servicio_de_interes" required>
+<option value="Mantenimiento de Cabezales">Mantenimiento de Cabezales</option>
+<option value="Facilidades y Montaje">Facilidades y Montaje</option>
+<option value="Construcción Especializada">Construcción Especializada</option>
+<option value="Otros">Otros</option>
+</select>
+</div>
+<div>
+<label class="font-label-caps text-label-caps block mb-1" for="contacto-detalles">DETALLES TÉCNICOS DEL REQUERIMIENTO</label>
+<textarea class="w-full brutal-border p-stack-sm focus:ring-2 focus:ring-industrial-red outline-none" rows="4" id="contacto-detalles" name="detalles_tecnicos" required></textarea>
+</div>
+<button type="submit" class="w-full bg-industrial-red text-white py-stack-md font-headline-sm uppercase border-2 border-black btn-shadow transition-all">
+                        SOLICITAR CONSULTA TÉCNICA
+                    </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Section -->
+<footer class="bg-[#181c1e] text-white border-t-2 border-outline mt-stack-lg">
+<div class="w-full py-stack-lg px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-[1440px] mx-auto">
+<div>
+<img alt="GEOPETROL Logo" class="h-10 mb-stack-md filter brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQvs8qfYPB8a0P4VahO1iRicbT0wLA9z-HS7scgFqV_lpLyMdXt04o1GZMkjq3t_hOe5HuYLPW9yvC3BlkldpQp1Vz2pogJ7ry7exYan9ILKd0Bv_kkyyvqjwYofUGOgsESsZjA1sOK-sYJEpcll-rhdLLBDHEfO3AewaIa9tDSzNHFKlxl5PEUbJaKAA_BfHJ-fUF6sjN83t7MO9C7k0aptbNXMDlpK9YOl8mYQR_3Yrua9ZYRXGeVvfhpjiy05DAqs9QOlflJ-M">
+<p class="font-body-sm text-surface-variant mb-stack-md">
+                © 2024 GEOPETROL S.A. <br> OPERACIONES INDUSTRIALES DE ALTA PRECISIÓN.
+            </p>
+<div class="flex gap-stack-sm">
+<span class="material-symbols-outlined cursor-pointer hover:text-industrial-red">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-industrial-red">work</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-industrial-red">hub</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-sm mb-stack-md uppercase">SERVICIOS</h4>
+<ul class="font-body-sm space-y-2">
+<li class=""><a class="text-surface-variant hover:text-industrial-red hover:underline transition-colors" href="#">Construcción Especializada</a></li>
+<li class=""><a class="text-surface-variant hover:text-industrial-red hover:underline transition-colors" href="#">Facilidades y Montaje</a></li>
+<li class=""><a class="text-surface-variant hover:text-industrial-red hover:underline transition-colors" href="#">Mantenimiento de Cabezales</a></li>
+<li class=""><a class="text-surface-variant hover:text-industrial-red hover:underline transition-colors" href="#">Capital Humano</a></li>
+<li class=""><a class="text-surface-variant hover:text-industrial-red hover:underline transition-colors" href="#">Sistemas Eléctricos</a></li>
+<li class=""><a class="text-surface-variant hover:text-industrial-red hover:underline transition-colors" href="#">Certificaciones ISO</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline-sm mb-stack-md uppercase">LEGAL Y PRIVACIDAD</h4>
+<ul class="font-body-sm space-y-2">
+<li class=""><a class="text-surface-variant hover:text-industrial-red hover:underline transition-colors" href="#">Términos de Servicio</a></li>
+<li class=""><a class="text-surface-variant hover:text-industrial-red hover:underline transition-colors" href="#">Política de Privacidad</a></li>
+<li class=""><a class="text-surface-variant hover:text-industrial-red hover:underline transition-colors" href="#">Cumplimiento Ético</a></li>
+<li class=""><a class="text-surface-variant hover:text-industrial-red hover:underline transition-colors" href="#">Mapa del Sitio</a></li>
+</ul>
+<div class="mt-stack-lg p-stack-sm border-2 border-outline-variant inline-block">
+<span class="font-label-caps text-label-caps text-surface-variant">ESTADO DEL SISTEMA: <span class="text-green-500 font-bold">NOMINAL</span></span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+<script src="main.js"></script>
+
+
+
+
+</body></html>
