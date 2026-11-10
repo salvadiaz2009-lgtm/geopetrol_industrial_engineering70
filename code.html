@@ -1,0 +1,626 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><title>Geopetrol, C.A. - Portal Corporativo</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed-dim": "#ffb4ab",
+          "on-primary-container": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "tertiary": "#000000",
+          "inverse-primary": "#c9c6c5",
+          "on-secondary-fixed": "#410002",
+          "on-error-container": "#93000a",
+          "error-container": "#ffdad6",
+          "surface-container-low": "#f8f9fa",
+          "primary-container": "#dc2626",
+          "surface-bright": "#f8f9fa",
+          "on-tertiary": "#ffffff",
+          "surface": "#ffffff",
+          "surface-container-high": "#e7e8e9",
+          "on-secondary-fixed-variant": "#93000b",
+          "on-tertiary-fixed": "#121c2a",
+          "inverse-surface": "#2e3132",
+          "on-primary-fixed": "#1c1b1b",
+          "tertiary-fixed-dim": "#bdc7d9",
+          "primary-fixed": "#e5e2e1",
+          "secondary-fixed": "#ffdad6",
+          "on-error": "#ffffff",
+          "on-primary-fixed-variant": "#474646",
+          "primary-fixed-dim": "#c9c6c5",
+          "surface-container": "#f1f3f5",
+          "on-secondary-container": "#fffbff",
+          "surface-container-highest": "#e1e3e4",
+          "surface-variant": "#e1e3e4",
+          "on-tertiary-fixed-variant": "#3d4756",
+          "outline": "#747878",
+          "error": "#ba1a1a",
+          "primary": "#dc2626",
+          "on-surface": "#0a0a0a",
+          "tertiary-fixed": "#d9e3f6",
+          "on-tertiary-container": "#7a8495",
+          "secondary-container": "#dc2626",
+          "inverse-on-surface": "#f0f1f2",
+          "surface-tint": "#dc2626",
+          "secondary": "#bb0112",
+          "on-primary": "#ffffff",
+          "background": "#ffffff",
+          "on-surface-variant": "#444748",
+          "tertiary-container": "#121c2a",
+          "on-background": "#0a0a0a",
+          "on-secondary": "#ffffff",
+          "surface-dim": "#d9dadb",
+          "outline-variant": "#e5e7eb"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "gutter": "1.5rem",
+          "space-lg": "1.5rem",
+          "gutter-sm": "1rem",
+          "space-xs": "0.25rem",
+          "margin-mobile": "1rem",
+          "margin": "2rem",
+          "gutter-lg": "2rem",
+          "margin-desktop": "3rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2.5rem"
+        },
+        "fontFamily": {
+          "body-lg": [
+            "Inter"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Barlow Condensed"
+          ],
+          "headline-lg-mobile": [
+            "Barlow Condensed"
+          ],
+          "headline-md": [
+            "Barlow Condensed"
+          ],
+          "headline-sm": [
+            "Barlow Condensed"
+          ],
+          "label-lg": [
+            "Barlow Condensed"
+          ],
+          "label-md": [
+            "Barlow Condensed"
+          ],
+          "headline-xl-mobile": [
+            "Barlow Condensed"
+          ],
+          "label-sm": [
+            "Barlow Condensed"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Barlow Condensed"
+          ]
+        },
+        "fontSize": {
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "16px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl-mobile": [
+            "36px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.1em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "56px",
+            {
+              "lineHeight": "60px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }
+</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style></head><body class="bg-background font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe"><div class="bg-surface-container-lowest text-on-surface-variant border-b border-outline-variant px-margin-mobile py-space-xs flex items-center justify-between text-label-sm font-label-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[14px]">call</span><span class="tracking-wider uppercase text-on-surface font-semibold">Bases El Tigre &amp; Valencia</span></div><a class="text-primary hover:text-red-700 tracking-wider font-bold" href="tel:+584148174159">+58 414 817 4159</a></div><div class="h-20 bg-surface/95 backdrop-blur-xl px-margin-mobile flex items-center justify-between border-b border-outline-variant shadow-sm"><div class="flex items-center gap-space-sm"><img alt="GEOPETROL" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD262Yjcudqvg-Jqu5VHSbbqnztaxO_z-swWoWLddwMDMyj6sWflbn5cI3ueia1vST04aEk8t8DHwViKAt1cPpx2A12-9CTjoy6vqFYiEzXza5UTBk2xuTJrOniHJc0_ycnkSY7Rdb_puU_JUR7OoitkI-7BcczlR05Dv1lzfyosNtjZSxPGRwbN71LBUDvgK0Qwo6ogMU7CK6LtKAIO-w2qhflfeWX5d2tDGllcgS4F8IvDNMt0a4C"><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="text-headline-sm font-headline-sm tracking-wide uppercase text-on-surface font-bold leading-none">GEOPETROL</span><div class="inline-flex items-center gap-1 px-1.5 py-0.5 bg-red-50 border border-red-200 rounded"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span class="text-[9px] font-label-sm text-primary font-bold tracking-widest">24/7</span></div></div><span class="text-label-sm font-label-sm text-on-surface-variant truncate max-w-[130px]">Inicio</span></div></div><div class="flex items-center gap-space-xs"><a class="hidden sm:inline-flex items-center justify-center px-4 py-1.5 bg-primary text-white font-headline-sm text-label-md uppercase tracking-wider font-bold min-h-[40px] rounded hover:bg-red-700 transition-colors shadow-sm" href="#contacto">CONTÁCTANOS</a><button aria-label="Abrir menú" class="w-11 h-11 flex items-center justify-center text-on-surface bg-surface-container rounded border border-outline-variant hover:text-primary transition-colors" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full')"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div></header><main class="flex flex-col relative w-full pt-20 bg-background flex-grow"><div class="flex flex-col w-full text-on-surface">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-white border-b border-outline-variant">
+<div class="relative w-full px-margin-mobile pt-space-lg pb-space-xl flex flex-col gap-space-md">
+<!-- Live Ops Pill -->
+<div class="inline-flex items-center gap-space-xs px-2.5 py-1 bg-red-50 border border-red-200 w-fit rounded">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">OPERACIONES EN CAMPO • 2016-2026</span>
+</div>
+<!-- Hero Headline -->
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile uppercase text-on-surface tracking-tight leading-none font-bold">
+          Aliados estratégicos de la <span class="text-primary">industria nacional.</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          10 años de trayectoria ininterrumpida ejecutando proyectos de movimiento de tierra, construcción industrial, vialidad y gestión ambiental con flota propia y altos estándares de seguridad.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<a class="flex items-center justify-center gap-space-xs w-full py-3.5 px-space-md bg-primary hover:bg-red-700 text-white font-headline-sm text-headline-sm uppercase font-bold tracking-wider rounded shadow-md active:scale-[0.99] transition-all" href="#servicios">
+<span class="material-symbols-outlined text-[20px]">precision_manufacturing</span>
+          Ver Servicios Especializados
+        </a>
+</div>
+<!-- Hero Machine Showcase Image -->
+<div class="relative w-full h-52 overflow-hidden rounded border border-outline-variant shadow-md mt-space-xs">
+<img class="w-full h-full object-cover" data-alt="Heavy CAT bulldozers and Volvo hydraulic excavators conducting large-scale earthmoving operations on an industrial oilfield project in Venezuela, dramatic dusk lighting with amber and carbon tones, ultra-realistic heavy engineering machinery in high resolution" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV3kchsoy8rlvZPCTWV9end0oEXhSTZ0bKUQw_UcIFnv36YSRSETK-VQU_IgNgyuce-LwykKA35z-IzvoXeUpRsXUHWvMmZh-QORtOS1cDLF2KRQNZIBarZu1EC0oSWFq8CY-8wNQ2QgxxAtnIjF0aMeZPxzncC7ASi4_pzg1TCoRql3NjWApTF9-evuAUfsyzbMHjpzqPcPQl68WdK3gBmoIOmMy9zKc6hHvDaqA">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between px-2.5 py-1.5 bg-black/85 backdrop-blur-md rounded border border-white/20">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">speed</span>
+<span class="font-label-sm text-label-sm text-white font-medium uppercase tracking-wider">Flota de Alto Rendimiento</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">100% OPERATIVA</span>
+</div>
+</div>
+<!-- High-Impact Telemetry Badges Grid -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<!-- Stat 1 -->
+<div class="p-space-sm bg-surface-container-low border border-outline-variant rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-1">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Experiencia</span>
+<span class="material-symbols-outlined text-primary text-[18px]">workspace_premium</span>
+</div>
+<div class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary leading-none">10 AÑOS</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Trayectoria ininterrumpida en el sector</p>
+</div>
+<!-- Stat 2 -->
+<div class="p-space-sm bg-surface-container-low border border-outline-variant rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-1">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Equipamiento</span>
+<span class="material-symbols-outlined text-primary text-[18px]">front_loader</span>
+</div>
+<div class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary leading-none">50 UNIDADES</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Flota pesada propia 100% operativa</p>
+</div>
+<!-- Stat 3 -->
+<div class="p-space-sm bg-surface-container-low border border-outline-variant rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-1">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Alcance</span>
+<span class="material-symbols-outlined text-primary text-[18px]">factory</span>
+</div>
+<div class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface leading-none">6 SECTORES</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Petrolero, minero, obras civiles y más</p>
+</div>
+<!-- Stat 4 -->
+<div class="p-space-sm bg-surface-container-low border border-outline-variant rounded shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-1">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">Logística</span>
+<span class="material-symbols-outlined text-primary text-[18px]">warehouse</span>
+</div>
+<div class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface leading-none">2 BASES</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Patios en El Tigre y Valencia</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: QUIÉNES SOMOS -->
+<section class="w-full px-margin-mobile py-space-xl bg-surface-container-low border-b border-outline-variant flex flex-col gap-space-md">
+<!-- Header Block -->
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-red-50 border border-red-200 w-fit rounded">
+<span class="material-symbols-outlined text-primary text-[14px]">shield</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">TRAYECTORIA Y COMPROMISO</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile uppercase text-on-surface font-bold leading-tight">
+        Respaldo Institucional y Fortaleza Operativa
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Creada en 2016 por un equipo de profesionales especialistas en construcción de caminos y faenas de gran envergadura. Inscrita en el Registro Mercantil Tercero del Estado Anzoátegui (N.° 31, Tomo 31-A).
+      </p>
+</div>
+<!-- Misión & Visión Dual Highlight Cards -->
+<div class="flex flex-col gap-space-xs">
+<!-- Misión -->
+<div class="p-space-md bg-white border border-outline-variant rounded shadow-sm flex flex-col gap-1.5">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+<span class="font-headline-sm text-headline-sm uppercase font-bold tracking-wide">Misión</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Proveer soluciones integrales de ingeniería, movimiento de tierras y logística pesada en tiempo y forma, guiados por innovación constante, seguridad operacional inquebrantable y estricto respeto ambiental.
+        </p>
+</div>
+<!-- Visión -->
+<div class="p-space-md bg-white border border-outline-variant rounded shadow-sm flex flex-col gap-1.5">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+<span class="font-headline-sm text-headline-sm uppercase font-bold tracking-wide">Visión</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Consolidarnos como líderes de mercado nacional y socios estratégicos de primer nivel para empresas de energía, minería e infraestructura civil a gran escala en Venezuela.
+        </p>
+</div>
+</div>
+<!-- Regulatory Compliance Banner -->
+<div class="p-space-sm bg-white border border-outline-variant rounded shadow-sm flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-red-50 border border-red-200 flex-shrink-0 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold">Certificaciones Vigentes</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold truncate">Cumplimiento RACDA, Solvencia Laboral y RNC Activo</span>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: SERVICIOS ESPECIALIZADOS -->
+<section class="w-full px-margin-mobile py-space-xl bg-white border-b border-outline-variant flex flex-col gap-space-md" id="servicios">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-red-50 border border-red-200 w-fit rounded">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">DIVISIÓN TÉCNICA</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile uppercase text-on-surface font-bold leading-tight">
+        Servicios Especializados
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Capacidad de respuesta inmediata con personal calificado y control de calidad bajo normativa petrolera.
+      </p>
+</div>
+<!-- 5 Service Cards -->
+<div class="flex flex-col gap-space-sm">
+<!-- Servicio 1 -->
+<div class="p-space-md bg-surface-container-low border border-outline-variant rounded shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-red-50 border border-red-200 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">landscape</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold px-2 py-0.5 bg-red-50 border border-red-200 rounded">CIVIL &amp; VIAL</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface">Movimiento de Tierra y Obra Civil</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Excavaciones masivas, conformación de plataformas para taladros, cortes y rellenos, terraplenes compactados y vialidad de acceso industrial.
+        </p>
+</div>
+<!-- Servicio 2 -->
+<div class="p-space-md bg-surface-container-low border border-outline-variant rounded shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-red-50 border border-red-200 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">electrical_services</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold px-2 py-0.5 bg-red-50 border border-red-200 rounded">ENERGÍA &amp; PLANTAS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface">Construcción Industrial y Eléctrica</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Montaje de facilidades mecánicas, tendidos de alta y baja tensión (AT/BT), cimentaciones especiales y adecuación de subestaciones eléctricas.
+        </p>
+</div>
+<!-- Servicio 3 -->
+<div class="p-space-md bg-surface-container-low border border-outline-variant rounded shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-red-50 border border-red-200 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">recycling</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold px-2 py-0.5 bg-red-50 border border-red-200 rounded">RACDA CERTIFICADO</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface">Gestión y Saneamiento Ambiental</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Manejo y transporte seguro de sustancias y desechos peligrosos bajo registro RACDA, secado y estabilización de fosas de perforación y saneamiento de suelos.
+        </p>
+</div>
+<!-- Servicio 4 -->
+<div class="p-space-md bg-surface-container-low border border-outline-variant rounded shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-red-50 border border-red-200 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">local_shipping</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold px-2 py-0.5 bg-red-50 border border-red-200 rounded">ALQUILER &amp; MAQUINARIA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface">Transporte y Alquiler de Maquinaria</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Flota pesada equipada con operadores certificados, fletes en bateas y lowboys, además de unidad móvil de auxilio mecánico en sitio 24/7.
+        </p>
+</div>
+<!-- Servicio 5 -->
+<div class="p-space-md bg-surface-container-low border border-outline-variant rounded shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-red-50 border border-red-200 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">build</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold px-2 py-0.5 bg-red-50 border border-red-200 rounded">MANIOBRAS CRÍTICAS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface">Servicios Especializados de Campo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Izamiento y maniobras con grúas telescópicas, tendido y soldadura calificada de oleoductos e inspecciones con ensayos no destructivos.
+        </p>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: FLOTA Y MAQUINARIA DESTACADA -->
+<section class="w-full px-margin-mobile py-space-xl bg-surface-container-low border-b border-outline-variant flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-red-50 border border-red-200 w-fit rounded">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">DISPONIBILIDAD INMEDIATA</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile uppercase text-on-surface font-bold leading-tight">
+        50 Unidades Propias con Mantenimiento en Terreno
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Talleres móviles y mecánicos de guardia garantizan cero tiempos muertos en sus frentes de trabajo.
+      </p>
+</div>
+<!-- Filter Segmented Tabs (Interactive UI) -->
+<div class="flex overflow-x-auto pb-1 gap-1.5 scrollbar-none" id="fleet-filter-bar">
+<button class="fleet-btn px-3 py-1.5 rounded font-label-sm text-label-sm uppercase whitespace-nowrap bg-primary text-white font-bold shadow-sm" onclick="filterFleet('all', this)">
+        Todos (50)
+      </button>
+<button class="fleet-btn px-3 py-1.5 rounded font-label-sm text-label-sm uppercase whitespace-nowrap bg-white border border-outline-variant text-on-surface font-semibold" onclick="filterFleet('dozers', this)">
+        Bulldozers
+      </button>
+<button class="fleet-btn px-3 py-1.5 rounded font-label-sm text-label-sm uppercase whitespace-nowrap bg-white border border-outline-variant text-on-surface font-semibold" onclick="filterFleet('excavators', this)">
+        Excavadoras
+      </button>
+<button class="fleet-btn px-3 py-1.5 rounded font-label-sm text-label-sm uppercase whitespace-nowrap bg-white border border-outline-variant text-on-surface font-semibold" onclick="filterFleet('loaders', this)">
+        Payloaders
+      </button>
+<button class="fleet-btn px-3 py-1.5 rounded font-label-sm text-label-sm uppercase whitespace-nowrap bg-white border border-outline-variant text-on-surface font-semibold" onclick="filterFleet('heavy-haul', this)">
+        Volteos / Mack
+      </button>
+</div>
+<!-- Equipment List Display -->
+<div class="flex flex-col gap-space-sm" id="fleet-list-container">
+<!-- Item 1: Bulldozer -->
+<div class="fleet-card p-space-sm bg-white border border-outline-variant rounded shadow-sm flex flex-col gap-space-xs" data-category="dozers">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase">Caterpillar D9H / D8N / D6R</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-red-50 border border-red-200 px-2 py-0.5 rounded">TRACTORES</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Desmonte, empuje pesado de material y apertura de frentes en terrenos rocosos de alta dificultad.
+        </p>
+<div class="grid grid-cols-3 gap-1 pt-1 font-label-sm text-label-sm text-on-surface font-semibold">
+<div class="bg-surface-container-low border border-outline-variant p-1 rounded text-center">410 HP</div>
+<div class="bg-surface-container-low border border-outline-variant p-1 rounded text-center">Ripper 1-3 Dientes</div>
+<div class="bg-red-50 border border-red-200 p-1 rounded text-center text-primary font-bold">GPS ACTIVO</div>
+</div>
+</div>
+<!-- Item 2: Excavadoras -->
+<div class="fleet-card p-space-sm bg-white border border-outline-variant rounded shadow-sm flex flex-col gap-space-xs" data-category="excavators">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase">Volvo EC330 / John Deere 200</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-red-50 border border-red-200 px-2 py-0.5 rounded">ORUGAS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Zanjeo profundo, carga de material estéril, taludes y conformación hidráulica en plataformas.
+        </p>
+<div class="grid grid-cols-3 gap-1 pt-1 font-label-sm text-label-sm text-on-surface font-semibold">
+<div class="bg-surface-container-low border border-outline-variant p-1 rounded text-center">Cuchara 2.2 m³</div>
+<div class="bg-surface-container-low border border-outline-variant p-1 rounded text-center">Brazo Reforzado</div>
+<div class="bg-red-50 border border-red-200 p-1 rounded text-center text-primary font-bold">GPS ACTIVO</div>
+</div>
+</div>
+<!-- Item 3: Payloaders & Traíllas -->
+<div class="fleet-card p-space-sm bg-white border border-outline-variant rounded shadow-sm flex flex-col gap-space-xs" data-category="loaders">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase">CAT 966G &amp; Mototraíllas 631D</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-red-50 border border-red-200 px-2 py-0.5 rounded">CARGA RÁPIDA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Alimentación continua de tolvas, acarreo masivo y nivelación expedita de grandes extensiones.
+        </p>
+<div class="grid grid-cols-3 gap-1 pt-1 font-label-sm text-label-sm text-on-surface font-semibold">
+<div class="bg-surface-container-low border border-outline-variant p-1 rounded text-center">Balde 4.0 m³</div>
+<div class="bg-surface-container-low border border-outline-variant p-1 rounded text-center">Cap. 31 yd³</div>
+<div class="bg-red-50 border border-red-200 p-1 rounded text-center text-primary font-bold">OPERATIVO</div>
+</div>
+</div>
+<!-- Item 4: Volteos Mack & Kenworth -->
+<div class="fleet-card p-space-sm bg-white border border-outline-variant rounded shadow-sm flex flex-col gap-space-xs" data-category="heavy-haul">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface uppercase">Volteos Mack &amp; Kenworth T800</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-red-50 border border-red-200 px-2 py-0.5 rounded">TRANSPORTE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Tolvas reforzadas Hardox de 14 a 28 m³, bateas graneleras y lowboys para movilización interurbana.
+        </p>
+<div class="grid grid-cols-3 gap-1 pt-1 font-label-sm text-label-sm text-on-surface font-semibold">
+<div class="bg-surface-container-low border border-outline-variant p-1 rounded text-center">6x4 y Lowboy</div>
+<div class="bg-surface-container-low border border-outline-variant p-1 rounded text-center">Cap. 60 Tn</div>
+<div class="bg-red-50 border border-red-200 p-1 rounded text-center text-primary font-bold">HAB. RACDA</div>
+</div>
+</div>
+</div>
+<!-- Catalog CTA Link -->
+<a class="flex items-center justify-center gap-space-xs p-space-sm bg-white hover:bg-surface-container border border-outline-variant text-primary font-headline-sm text-headline-sm uppercase font-bold tracking-wider rounded transition-colors shadow-sm" href="#contacto">
+<span>Ver catálogo completo de maquinaria</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</section>
+<!-- SECCIÓN: TRAYECTORIA Y CONTRATOS ACTIVOS -->
+<section class="w-full px-margin-mobile py-space-xl bg-white border-b border-outline-variant flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-red-50 border border-red-200 w-fit rounded">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">CASOS DE ÉXITO</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile uppercase text-on-surface font-bold leading-tight">
+        Contratos Activos y Gran Escala
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Proyectos de relevancia estratégica nacional ejecutados con solvencia técnica probada.
+      </p>
+</div>
+<!-- Contract Cards -->
+<div class="flex flex-col gap-space-sm">
+<!-- Card 1: CVC / CAF -->
+<div class="p-space-md bg-surface-container-low border border-outline-variant rounded shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary px-2 py-0.5 bg-red-50 border border-red-200 rounded font-bold">2026 - ACTUALIDAD</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">LA GUAIRA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface">CVC / Corporación Andina de Fomento (CAF)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Plan Nacional de Reconstrucción por Terremotos. Ejecución ininterrumpida de recolección, transporte y disposición final controlada de escombros masivos, saneamiento de cauces y reconstrucción de vías estratégicas de acceso costero.
+        </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase">Fiscalización Internacional Aprobada</span>
+</div>
+</div>
+<!-- Card 2: Grupo Protecnia -->
+<div class="p-space-md bg-surface-container-low border border-outline-variant rounded shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary px-2 py-0.5 bg-red-50 border border-red-200 rounded font-bold">2020 - ACTUALIDAD</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">ANZOÁTEGUI &amp; ARAGUA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface">Grupo Protecnia</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Manejo integral operativo de Rellenos Sanitarios en Santa Eduviges, San Vicente y Cerro de Piedra. Compactación masiva, cobertura diaria con material granular, lixiviados y manejo de maquinaria pesada bajo normativas del Ministerio de Ecosocialismo.
+        </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase">+5 Años en Operación Continua</span>
+</div>
+</div>
+</div>
+<!-- Clientes Destacados Badge Cluster -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-bold">Confianza de Primer Nivel en la Industria</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 bg-surface-container-low border border-outline-variant rounded font-label-sm text-label-sm text-on-surface font-bold tracking-wide">PDVSA PETRÓLEO</span>
+<span class="px-2.5 py-1 bg-surface-container-low border border-outline-variant rounded font-label-sm text-label-sm text-on-surface font-bold tracking-wide">PETROMIRANDA</span>
+<span class="px-2.5 py-1 bg-surface-container-low border border-outline-variant rounded font-label-sm text-label-sm text-on-surface font-bold tracking-wide">PETROCEDEÑO</span>
+<span class="px-2.5 py-1 bg-surface-container-low border border-outline-variant rounded font-label-sm text-label-sm text-on-surface font-bold tracking-wide">PETROVENEZOLANA DE SERV.</span>
+<span class="px-2.5 py-1 bg-surface-container-low border border-outline-variant rounded font-label-sm text-label-sm text-on-surface font-bold tracking-wide">C&amp;R INGENIERÍA</span>
+<span class="px-2.5 py-1 bg-red-50 border border-red-200 rounded font-label-sm text-label-sm text-primary font-bold tracking-wide">CVC / CAF</span>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: DIRECT CONTACT CTA BANNER -->
+<section class="w-full px-margin-mobile py-space-xl bg-surface-container-low border-b border-outline-variant flex flex-col gap-space-md" id="contacto"><div class="p-space-md bg-white border border-outline-variant rounded shadow-lg flex flex-col gap-space-md relative overflow-hidden"><div class="flex flex-col gap-space-xs"><div class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-red-50 border border-red-200 w-fit rounded"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-bold">ATENCIÓN INMEDIATA 24/7</span></div><h2 class="font-headline-lg-mobile text-headline-lg-mobile uppercase text-on-surface font-bold leading-tight">Comuníquese con Nosotros</h2><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Canales directos de atención y coordinación de proyectos industriales.</p></div><div class="p-space-sm bg-surface-container-low border border-outline-variant rounded flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><div class="w-11 h-11 rounded bg-primary text-white font-headline-sm text-headline-sm flex items-center justify-center font-bold flex-shrink-0">FD</div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm uppercase font-bold text-on-surface truncate">Freddy Díaz</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase truncate font-semibold">Gerencia de Operaciones &amp; Logística</span></div></div><span class="font-label-sm text-label-sm text-primary bg-red-50 border border-red-200 px-2 py-1 rounded whitespace-nowrap font-bold">BASE EL TIGRE</span></div><div class="flex flex-col gap-space-xs"><a class="flex items-center justify-center gap-space-xs w-full py-3.5 px-space-md bg-primary hover:bg-red-700 text-white font-headline-sm text-headline-sm uppercase font-bold tracking-wider rounded shadow-md active:scale-[0.99] transition-all" href="https://wa.me/584148174159?text=Hola%20Freddy,%20solicito%20atenci%C3%B3n%20para%20proyecto%20industrial%20con%20Geopetrol." target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span>WhatsApp: +58 414 817 4159</a><a class="flex items-center justify-center gap-space-xs w-full py-3.5 px-space-md bg-surface-container-low hover:bg-surface-container border border-outline-variant text-on-surface font-headline-sm text-headline-sm uppercase font-bold tracking-wider rounded transition-colors" href="tel:+584148174159"><span class="material-symbols-outlined text-primary text-[20px]">call</span>Llamar: +58 414 817 4159</a><a class="flex items-center justify-center gap-space-xs w-full py-3 px-space-md bg-surface-container-low hover:bg-surface-container border border-outline-variant text-on-surface font-headline-sm text-headline-sm uppercase font-semibold tracking-wider rounded transition-colors" href="mailto:fdiaz@geopetrol.co.ve"><span class="material-symbols-outlined text-primary text-[20px]">mail</span>fdiaz@geopetrol.co.ve</a></div><div class="flex flex-col gap-space-xs pt-space-xs border-t border-outline-variant"><div class="flex flex-col gap-1 p-space-sm bg-surface-container-low border border-outline-variant rounded"><div class="flex items-center gap-1.5 text-primary"><span class="material-symbols-outlined text-[18px]">corporate_fare</span><span class="font-label-sm text-label-sm font-bold uppercase tracking-wide">Dirección Fiscal</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Av. Jesús Subero, Urb. Terracota, Ofic. N.° 1, El Tigre, Edo. Anzoátegui.</p></div><div class="flex flex-col gap-1 p-space-sm bg-surface-container-low border border-outline-variant rounded"><div class="flex items-center gap-1.5 text-primary"><span class="material-symbols-outlined text-[18px]">precision_manufacturing</span><span class="font-label-sm text-label-sm font-bold uppercase tracking-wide">Patios de Operaciones</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">Zona Industrial El Tigre, Calle N.° 4, Local B4, Anzoátegui | Valencia, Carabobo.</p></div></div></div></section>
+<!-- INTERACTIVE MODAL: COTIZACIÓN RÁPIDA -->
+
+</div>
+<script>
+  function filterFleet(category, btnElement) {
+    const cards = document.querySelectorAll('.fleet-card');
+    const buttons = document.querySelectorAll('.fleet-btn');
+
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-white', 'font-bold');
+      btn.classList.add('bg-white', 'text-on-surface', 'border', 'border-outline-variant', 'font-semibold');
+    });
+
+    btnElement.classList.remove('bg-white', 'text-on-surface', 'border', 'border-outline-variant', 'font-semibold');
+    btnElement.classList.add('bg-primary', 'text-white', 'font-bold');
+
+    cards.forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  function handleQuoteSubmit(e) {
+    e.preventDefault();
+    alert('Requerimiento registrado exitosamente. El equipo técnico de Geopetrol C.A. se comunicará en breve.');
+    document.getElementById('quote-modal').classList.add('hidden');
+  }
+</script><footer class="w-full bg-[#0a0a0a] text-gray-300 mt-space-xl pb-24"><div class="px-margin-mobile pt-space-lg flex flex-col gap-space-md"><div class="flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="Geopetrol C.A. Logo" class="h-6 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1X6UJbyeAqKPUbHi-ay7IEZd-ejyNn89T1zJHkAslQvHHA8DSgiSMmFCdT5fenC-kwjdVPWHXmczrrkVLaMpJymGvfnZHMc4_FwYsJMlyxdQSqkRPxhA3Qn5yPrFr8CMG3xqIXAmDwzltzca5lwRup5D87apdrI_PhKWoWHSPN7eahzb1L38OUY9Am9j6RONsULhmGkLcKABEpVec4eB03xj36Q1YLTJ9Y4CvWsX9Wa"><span class="font-headline-sm text-headline-sm uppercase text-white font-bold">GEOPETROL, C.A.</span></div><span class="px-2 py-0.5 bg-neutral-900 border border-neutral-800 font-label-sm text-label-sm text-primary font-bold">INGENIERÍA &amp; OPERACIONES</span></div><div class="p-space-sm bg-neutral-900 border border-neutral-800 rounded flex flex-col gap-1"><div class="flex items-center justify-between text-label-sm font-label-sm"><span class="text-neutral-400">RIF:</span><span class="text-white font-semibold">J-40792644-6</span></div><div class="flex items-center justify-between text-label-sm font-label-sm"><span class="text-neutral-400">RNC:</span><span class="text-white font-semibold">1206163407926446165</span></div><div class="flex items-center justify-between text-label-sm font-label-sm"><span class="text-neutral-400">REG. MERCANTIL:</span><span class="text-white font-semibold text-right">3ro Edo. Anzoátegui N.° 31</span></div></div><div class="grid grid-cols-1 gap-space-sm text-label-sm font-label-sm"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[16px] mt-0.5">location_on</span><div><p class="font-semibold text-white uppercase">Base Operativa El Tigre</p><p class="text-neutral-400">Zona Industrial San Valentín, Parcela G-12, El Tigre, Edo. Anzoátegui.</p></div></div><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[16px] mt-0.5">location_on</span><div><p class="font-semibold text-white uppercase">Sede Central Valencia</p><p class="text-neutral-400">Urb. Industrial Castillito, Galpón 4, Valencia, Edo. Carabobo.</p></div></div></div><div class="flex items-center justify-between pt-space-sm border-t border-neutral-800"><span class="text-label-sm font-label-sm text-neutral-400">© 2026 GEOPETROL C.A. Todos los derechos reservados.</span><a class="text-label-sm font-label-sm text-primary underline font-bold" href="#">Seguridad &amp; RACDA</a></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-white/95 backdrop-blur-xl border-t border-outline-variant shadow-lg" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] transition-colors text-primary" data-path="inicio" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="text-label-sm font-label-sm uppercase font-bold">Inicio</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="servicios" href="#servicios"><span class="material-symbols-outlined text-[20px]">construction</span><span class="text-label-sm font-label-sm uppercase font-semibold">Servicios</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="flota-y-equipos" href="#fleet-list-container"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span class="text-label-sm font-label-sm uppercase font-semibold">Flota</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="experiencia" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span class="text-label-sm font-label-sm uppercase font-semibold">Proyectos</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-colors" data-path="contacto" href="#contacto"><span class="material-symbols-outlined text-[20px]">support_agent</span><span class="text-label-sm font-label-sm uppercase font-semibold">Contacto</span></a></div></nav><aside class="fixed inset-0 z-50 transform translate-x-full transition-transform duration-300 ease-in-out bg-white/95 backdrop-blur-xl flex flex-col pt-safe pb-safe" id="mobile-drawer"><div class="h-20 px-margin-mobile flex items-center justify-between border-b border-outline-variant"><div class="flex items-center gap-space-sm"><img alt="Geopetrol C.A. Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X6UJbyeAqKPUbHi-ay7IEZd-ejyNn89T1zJHkAslQvHHA8DSgiSMmFCdT5fenC-kwjdVPWHXmczrrkVLaMpJymGvfnZHMc4_FwYsJMlyxdQSqkRPxhA3Qn5yPrFr8CMG3xqIXAmDwzltzca5lwRup5D87apdrI_PhKWoWHSPN7eahzb1L38OUY9Am9j6RONsULhmGkLcKABEpVec4eB03xj36Q1YLTJ9Y4CvWsX9Wa"><span class="text-headline-sm font-headline-sm text-on-surface uppercase font-bold">MENÚ OPERACIONAL</span></div><button aria-label="Cerrar menú" class="w-11 h-11 flex items-center justify-center text-on-surface bg-surface-container-low border border-outline-variant rounded hover:text-primary" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')"><span class="material-symbols-outlined text-[24px]">close</span></button></div><div class="flex-grow flex flex-col justify-between px-margin-mobile py-space-md"><div class="flex flex-col gap-space-xs"><a class="flex items-center justify-between py-space-sm px-space-md bg-surface-container-low border border-outline-variant text-on-surface hover:text-primary text-headline-sm font-headline-sm uppercase tracking-wide rounded" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px] text-primary">home</span>Inicio</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a><a class="flex items-center justify-between py-space-sm px-space-md bg-surface-container-low border border-outline-variant text-on-surface hover:text-primary text-headline-sm font-headline-sm uppercase tracking-wide rounded" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px] text-primary">corporate_fare</span>Quiénes Somos</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a><a class="flex items-center justify-between py-space-sm px-space-md bg-surface-container-low border border-outline-variant text-on-surface hover:text-primary text-headline-sm font-headline-sm uppercase tracking-wide rounded" href="#servicios" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px] text-primary">engineering</span>Servicios</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a><a class="flex items-center justify-between py-space-sm px-space-md bg-surface-container-low border border-outline-variant text-on-surface hover:text-primary text-headline-sm font-headline-sm uppercase tracking-wide rounded" href="#fleet-list-container" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px] text-primary">precision_manufacturing</span>Flota y Equipos</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a><a class="flex items-center justify-between py-space-sm px-space-md bg-surface-container-low border border-outline-variant text-on-surface hover:text-primary text-headline-sm font-headline-sm uppercase tracking-wide rounded" href="#" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px] text-primary">workspace_premium</span>Experiencia</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a><a class="flex items-center justify-between py-space-sm px-space-md bg-surface-container-low border border-outline-variant text-on-surface hover:text-primary text-headline-sm font-headline-sm uppercase tracking-wide rounded" href="#contacto" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px] text-primary">contact_phone</span>Contacto</span><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></div><div class="flex flex-col gap-space-sm"><a class="flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-primary hover:bg-red-700 text-white font-headline-sm text-headline-sm uppercase font-bold tracking-wider rounded shadow-md" href="https://wa.me/584148174159" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span>WhatsApp Despacho</a><a class="flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-surface-container-low border border-outline-variant text-on-surface hover:text-primary font-headline-sm text-headline-sm uppercase font-bold tracking-wider rounded" href="tel:+584148174159"><span class="material-symbols-outlined text-primary text-[20px]">phone_in_talk</span>Llamada Directa</a></div></div></aside>
+
+
+
+</body></html>
